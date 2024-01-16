@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        background-color: #00ebd9;
+        border-radius: 8px;
+        width: 100px;
+        height: 100px;
+        margin: 50px;
+        transition: transform 3s;
+      }
+      .box2:hover {
+        transform: scale(0.5);
+        /* If we have only one value width and height is same It changes equally on width and height */
+        /* transform: scale(2,0.5); */
+        /* If we have two values then first one is width and second one is height */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+    <div class="box box2"></div>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .shape {
+        background-color: #886593;
+        border-radius: 6px 50%;
+        width: 100px;
+        height: 100px;
+        margin: 100px auto;
+        transition: all 5s;
+      }
+      .shape:hover {
+        transform: rotate(720deg);
+      }
+
+      .s2 {
+        background-color: #d470c2;
+        transform-origin: right bottom;
+        /* transform-origin: left bottom; */
+      }
+      .s3 {
+        transform-origin: left bottom;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="shape"></div>
+    <div class="shape s2"></div>
+    <div class="shape s3"></div>
+  </body>
+</html>
