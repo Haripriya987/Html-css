@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3d-transforms</title>
+    <style>
+      body {
+        font-family: sans-serif;
+      }
+      .wrap {
+        width: 200px;
+        height: 200px;
+        margin: 100px auto;
+        background-color: rgb(94, 94, 209);
+        border: 1px #aaa solid;
+        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.5);
+        border-radius: 5px;
+      }
+      .box {
+        background-color: rgba(0, 221, 244, 0.6);
+        border: 1px solid #3cf;
+        border-radius: 5px;
+        box-sizing: border-box;
+        width: 200px;
+        height: 200px;
+        padding: 20px;
+        text-align: center;
+        transform: rotateX(30deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="box">I'm a box</div>
+    </div>
+
+    <div class="box">I'm another box</div>
+  </body>
+</html>

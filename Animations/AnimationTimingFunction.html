@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        padding: 50px;
+        margin: 100px auto;
+      }
+      .wrap {
+        display: block;
+        margin-bottom: 75px;
+        /* width: 500px; */
+      }
+      .sphere {
+        border-radius: 50%;
+        width: 25px;
+        height: 25px;
+        margin-top: 10px;
+        transition: all 2s;
+        background-color: #3cf;
+        position: relative;
+        animation-name: slide;
+        animation-duration: 2.5s;
+
+        /* animation: slide 2.5s ease-in-out; */
+      }
+      @keyframes slide {
+        from {
+          left: 0;
+        }
+        to {
+          left: 400px;
+          transform: scale(2);
+          opacity: 0.5;
+        }
+      }
+      .s1 {
+        /* left: 10px; */
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: 3;
+        animation-direction: alternate;
+      }
+      .s2 {
+        background-color: #47dc80;
+        /* animation-delay: 0.5s; */
+        animation-timing-function: steps(3, start);
+        animation-iteration-count: 1;
+        animation-direction: alternate;
+      }
+      .s3 {
+        background-color: #f4e338;
+        /* animation-delay: 1s; */
+        animation-timing-function: step-start;
+        animation-iteration-count: 3;
+        animation-direction: alternate;
+      }
+      .s4 {
+        animation-timing-function: linear;
+        /* animation-delay: 1.5s; */
+        background-color: #f98320;
+        animation-iteration-count: 1;
+        animation-direction: alternate-reverse;
+      }
+      .s5 {
+        animation-timing-function: ease-out;
+        /* animation-delay: 2s; */
+        background-color: #da2a79;
+        animation-iteration-count: 2;
+        animation-direction: reverse;
+      }
+      .s6 {
+        animation-timing-function: ease-in;
+        /* animation-delay: 2.5s; */
+        background-color: #5943d2;
+        animation-iteration-count: 5;
+        animation-direction: alternate-reverse;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="sphere s1"></div>
+      <div class="sphere s2"></div>
+      <div class="sphere s3"></div>
+      <div class="sphere s4"></div>
+      <div class="sphere s5"></div>
+      <div class="sphere s6"></div>
+    </div>
+  </body>
+</html>
