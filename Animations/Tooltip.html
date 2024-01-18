@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: "Open Sans", "Helvetica";
+      }
+      ul {
+        margin: 0;
+        padding: 0;
+        position: relative;
+      }
+      .imgGallery img {
+        width: 300px;
+        height: 250px;
+      }
+      .imgGallery li {
+        width: 350px;
+        height: 212px;
+        position: relative;
+        list-style-type: none;
+        overflow: hidden;
+        margin: 20px;
+      }
+      .imgGallery li:hover .tooltip {
+        animation: tool 1.5s forwards;
+        display: block;
+      }
+
+      .tooltip {
+        position: absolute;
+        bottom: 30px;
+        left: 0;
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 0 15px 15px 0;
+        box-shadow: 3px 3px 4px 1px rgba(0, 0, 0, 0.4);
+        color: rgb(87, 133, 218);
+        display: none;
+        max-width: 75%;
+      }
+      .tooltip h1 {
+        line-height: 0.5;
+        padding: 5px 3px;
+      }
+      .tooltip p {
+        padding: 0 20px 3px;
+      }
+      @keyframes tool {
+        0% {
+          transform: translateX(-400px);
+        }
+        100% {
+          transform: translateX(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="imgGallery">
+      <li>
+        <a href="#"><img src="Img/Tortoise.jfif" alt="sea-Turtle" /> </a>
+        <div class="tooltip"><h1>Sea Turtle</h1></div>
+      </li>
+      <li>
+        <a href="#"><img src="Img/Whale.jfif" alt="Whale" /> </a>
+        <div class="tooltip">
+          <h1>Whale</h1>
+          <p>It is a huge animal. It is very Dangerous</p>
+        </div>
+      </li>
+    </ul>
+  </body>
+</html>

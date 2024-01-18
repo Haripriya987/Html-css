@@ -1,11 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: #8fd5d5;
+      }
+
+      .bubble {
+        width: 100px;
+        height: 100px;
+        background-color: rgba(52, 152, 219, 0.7);
+        border-radius: 50%;
+        position: relative;
+      }
+
+      .bubble:before {
+        content: "";
+        position: absolute;
+        width: 120px;
+        height: 120px;
+        background-color: rgba(99, 179, 233, 0.3);
+        /* Match the background color and alpha value */
+        border-radius: 50%;
+        top: -10px;
+        left: 50%;
+        transform: translateX(-50%) rotate(45deg);
+      }
+
+      .bubble {
+        animation-name: roll;
+        animation-duration: 3s;
+        /* animation-fill-mode: forwards; */
+        background-color: antiquewhite;
+      }
+      @keyframes roll {
+        from {
+          transform: translateX(0) rotate(0deg) scale(0.5);
+        }
+        to {
+          transform: translateX(400px) rotate(360deg) scale(0.25);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bubble"></div>
+  </body>
 </html>
