@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+}
+body {
+  font: 2em;
+  font-style: "lucida grande", arial, sans-serif;
+}
+header {
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+article {
+  width: 500px;
+  background-color: #d4d2d2;
+}
+section {
+  width: 500px;
+  margin: 10px auto;
+}
+article::after {
+  clear: both;
+  display: block;
+  content: "";
+}
+img {
+  width: 180px;
+  float: left;
+  padding-right: 0.5em;
+}
+p {
+  margin: 0 0 0.5em 0.5em;
+  height: 0;
+  padding: 0 15px;
+  overflow: hidden;
+  transition: height 0.5s ease-out, padding 0.5s ease-out;
+}
+article h1 {
+  font-size: 1.2em;
+}
+article a {
+  display: block;
+  height: 22px;
+  line-height: 25px;
+  background: linear-gradient(#eaeaea, #ccc);
+  text-decoration: none;
+  color: #333;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  border-bottom: solid 1px #aaa;
+}
+article a:hover,
+article a:focus {
+  opacity: 0.8;
+  outline: none;
+}
+article a:active {
+  background-color: linear-gradient(#ccc, #ddd);
+  color: #069;
+}
+#overview {
+  border-radius: 2px 2px 0 0;
+}
+#Tortoise {
+  border-radius: 0 0 3px 3px;
+}
+:target + p {
+  padding: 10px 15px;
+}
+
+#overview:target + p {
+  height: auto;
+}
+#whale:target + p {
+  height: auto;
+}
+#Tortoise:target + p {
+  height: auto;
+}
